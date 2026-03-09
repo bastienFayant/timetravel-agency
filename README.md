@@ -1,186 +1,150 @@
-# TimeTravel Agency — Interactive Web App
+# TimeTravel Agency — Webapp Interactive
 
-> A modern, immersive web experience for a fictional luxury time travel agency.
+> Une expérience web moderne et immersive pour une agence fictive de voyage dans le temps de luxe.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-gold)
 ![React](https://img.shields.io/badge/React-18-blue)
 ![Vite](https://img.shields.io/badge/Vite-4-purple)
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3-teal)
-![License](https://img.shields.io/badge/license-educational-green)
+![Licence](https://img.shields.io/badge/licence-éducative-green)
 
 ---
 
-# Live Demo
+# Démo en ligne
 
-🌐 **Online application**
-
+🌐 Application accessible ici :  
 https://timetravel-agency-beta.vercel.app/
 
 ---
 
-# Overview
+# Présentation du projet
 
-TimeTravel Agency is a modern web application created as part of a university project focused on **AI-assisted development and modern web technologies**.
+TimeTravel Agency est une application web moderne développée dans le cadre d’un projet universitaire autour du développement web et de l’intelligence artificielle.
 
-The application simulates a **luxury time travel agency** offering immersive journeys to historical and prehistoric eras.
+L’application met en scène une agence fictive de voyage dans le temps haut de gamme proposant des expériences immersives à travers différentes époques historiques et préhistoriques.
 
-Users can:
+Les utilisateurs peuvent :
 
-- explore unique time travel destinations
-- interact with a virtual travel assistant
-- receive personalized travel recommendations
-- experience a cinematic and modern web interface
+- explorer plusieurs destinations temporelles
+- interagir avec un assistant virtuel
+- obtenir une recommandation personnalisée
+- découvrir une interface moderne et immersive
 
-The project demonstrates how **AI-assisted development tools can accelerate frontend development while maintaining high design quality**.
+Le projet illustre comment les outils d’IA peuvent assister la conception et le développement d’une application web moderne.
 
 ---
 
-# Tech Stack
+# Stack technique
 
-| Technology | Purpose |
+| Technologie | Rôle |
 |---|---|
-| React | Component-based UI framework |
-| Vite | Fast build tool & dev server |
-| Tailwind CSS | Utility-first styling |
-| Framer Motion | Animations and transitions |
-| Node.js / npm | Development environment |
-| Vercel | Deployment platform |
+| React | Framework frontend basé sur des composants |
+| Vite | Outil de build et serveur de développement rapide |
+| Tailwind CSS | Framework de styling utilitaire |
+| Framer Motion | Animations et transitions |
+| Node.js / npm | Environnement de développement |
+| Vercel | Plateforme de déploiement |
 
 ---
 
-# Features
+# Fonctionnalités
 
-## Landing Page
+## Page d’accueil
 
-- Cinematic hero section
-- Animated gradient background
-- Smooth scrolling navigation
-- Premium typography system
+- Hero section immersive
+- arrière-plan animé
+- navigation fluide
+- typographie premium
+- boutons d’appel à l’action (CTA)
 
 ---
 
-## Destination Gallery
+## Galerie des destinations
 
-Three luxury time travel experiences are presented through animated cards.
+Trois destinations temporelles sont proposées :
 
 ### Paris 1889
-
-Experience the **Belle Époque** during the Universal Exposition and the inauguration of the Eiffel Tower.
-
-Highlights:
-
-- historic Paris atmosphere
-- artistic innovation
-- cultural elegance
-
-Price: **4900 €**
-
----
+Belle Époque et inauguration de la Tour Eiffel.  
+Prix : **4900 €**
 
 ### Crétacé
-
-Travel **65 million years into the past** and explore prehistoric ecosystems.
-
-Highlights:
-
-- adventure exploration
-- wildlife observation
-- untouched nature
-
-Price: **7900 €**
-
----
+Voyage **65 millions d’années dans le passé**.  
+Prix : **7900 €**
 
 ### Florence 1504
-
-Discover the **Italian Renaissance** at the time of Michelangelo and Leonardo da Vinci.
-
-Highlights:
-
-- art and architecture
-- renaissance culture
-- intellectual exploration
-
-Price: **5400 €**
+Découverte de la **Renaissance italienne**.  
+Prix : **5400 €**
 
 ---
 
-## AI Chatbot Assistant
+## Assistant conversationnel
 
-A floating chatbot widget acts as a **virtual travel concierge**.
-
-Capabilities:
-
-- answers questions about destinations
-- provides travel recommendations
-- explains prices and activities
-- simulates an AI assistant
-
-The chatbot uses a **rule-based natural language simulation with keyword detection**.
+Un chatbot flottant agit comme un concierge virtuel pour répondre aux questions sur les destinations et proposer des recommandations.
 
 ---
 
-## Personalized Recommendation Quiz
+## Quiz de recommandation personnalisé
 
-An interactive quiz helps users determine the **best destination for their profile**.
-
-Features:
-
-- 4 question personality profiling
-- weighted scoring algorithm
-- personalized recommendation result
-- explanation of why the destination matches the user
-
-The algorithm is implemented in:
-src/utils/recommendationEngine.js
+Un quiz interactif permet de recommander la destination idéale selon les préférences de l’utilisateur grâce à un algorithme de scoring.
 
 ---
 
-# User Experience
+# Structure du projet
 
-The application focuses on delivering a **premium, immersive experience**.
-
-UX highlights:
-
-- responsive mobile-first layout
-- smooth animations
-- interactive cards
-- elegant dark UI theme
-- luxury-inspired visual identity
-
-Animations are powered by **Framer Motion**.
-
----
-
-# Project Structure
-src
-├── components
-│ ├── Navbar.jsx
-│ ├── Hero.jsx
-│ ├── DestinationsSection.jsx
-│ ├── DestinationCard.jsx
-│ ├── QuizSection.jsx
-│ ├── ChatWidget.jsx
-│ └── Footer.jsx
-│
-├── data
-│ ├── destinations.js
-│ └── faq.js
-│
-├── utils
-│ └── recommendationEngine.js
-│
-├── App.jsx
-├── main.jsx
-└── index.css
-
-The project follows a **modular React component architecture** for maintainability and scalability.
+src/
+ ├── components  
+ ├── data  
+ ├── utils  
+ ├── App.jsx  
+ ├── main.jsx  
+ └── index.css  
 
 ---
 
 # Installation
 
-Clone the repository:
-
 ```bash
 git clone https://github.com/bastienFayant/timetravel-agency
+npm install
+npm run dev
+```
+
+Application accessible sur :  
+http://localhost:5173
+
+---
+
+# Build
+
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+# Déploiement
+
+Le projet est déployé via **Vercel**.
+
+https://timetravel-agency-beta.vercel.app/
+
+---
+
+# Outils d’intelligence artificielle utilisés
+
+- Claude  
+- Bolt.new  
+- ChatGPT  
+
+---
+
+# Contexte pédagogique
+
+Projet réalisé dans le cadre d’un **travail universitaire sur le développement web et l’IA**.
+
+---
+
+# Licence
+
+Licence MIT – usage éducatif.
