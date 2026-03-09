@@ -2,149 +2,185 @@
 
 > A modern, immersive web experience for a fictional luxury time travel agency.
 
-![TimeTravel Agency](https://img.shields.io/badge/version-1.0.0-gold)
+![Version](https://img.shields.io/badge/version-1.0.0-gold)
 ![React](https://img.shields.io/badge/React-18-blue)
 ![Vite](https://img.shields.io/badge/Vite-4-purple)
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3-teal)
+![License](https://img.shields.io/badge/license-educational-green)
 
 ---
 
-## Overview
+# Live Demo
 
-TimeTravel Agency is a premium landing page combined with an interactive AI-powered product experience. The application showcases three luxury time travel destinations while offering personalized recommendations through an intelligent quiz system and an AI chatbot assistant.
+🌐 **Online application**
 
----
-
-## Tech Stack
-
-| Technology | Version | Purpose |
-|---|---|---|
-| **React** | 18 | UI component architecture |
-| **Vite** | 4 | Lightning-fast dev server & bundler |
-| **Tailwind CSS** | 3 | Utility-first styling |
-| **Framer Motion** | 11 | Animations & transitions |
+https://timetravel-agency-beta.vercel.app/
 
 ---
 
-## Features
+# Overview
 
-### 🌐 Landing Page
-- Cinematic hero section with parallax effect
-- Animated gradient mesh background
-- Smooth scroll navigation
-- Premium typography (Cormorant Garamond + Josefin Sans)
+TimeTravel Agency is a modern web application created as part of a university project focused on **AI-assisted development and modern web technologies**.
 
-### 🗺 Destination Gallery
-- 3 interactive destination cards (Paris 1889, Crétacé, Florence 1504)
-- Hover animations with elevation and glow effects
-- Expandable detail panels
-- Price, difficulty, and duration badges
+The application simulates a **luxury time travel agency** offering immersive journeys to historical and prehistoric eras.
 
-### 🤖 AI Chatbot
-- Floating chat widget with gold UI
-- Rule-based NLP system using keyword detection
-- Quick-prompt suggestions
-- Typing animation for realism
-- Contextual responses about all destinations
+Users can:
 
-### 🧠 Personalized Recommendation Quiz
-- 4-step profiling questionnaire
-- Weighted scoring algorithm (`recommendationEngine.js`)
-- Personalized destination recommendation
-- Detailed explanation of the match
+- explore unique time travel destinations
+- interact with a virtual travel assistant
+- receive personalized travel recommendations
+- experience a cinematic and modern web interface
+
+The project demonstrates how **AI-assisted development tools can accelerate frontend development while maintaining high design quality**.
 
 ---
 
-## Project Structure
+# Tech Stack
 
-```
-src/
-├── components/
-│   ├── Navbar.jsx           # Sticky navigation with scroll behavior
-│   ├── Hero.jsx             # Cinematic hero with parallax
-│   ├── DestinationsSection.jsx  # Grid layout for destination cards
-│   ├── DestinationCard.jsx  # Individual destination card
-│   ├── QuizSection.jsx      # AI profiling quiz
-│   ├── ChatWidget.jsx       # Floating chatbot
-│   └── Footer.jsx           # Footer with links
-├── data/
-│   ├── destinations.js      # Destination data objects
-│   └── faq.js               # Chatbot knowledge base
-├── utils/
-│   └── recommendationEngine.js  # Scoring algorithm
+| Technology | Purpose |
+|---|---|
+| React | Component-based UI framework |
+| Vite | Fast build tool & dev server |
+| Tailwind CSS | Utility-first styling |
+| Framer Motion | Animations and transitions |
+| Node.js / npm | Development environment |
+| Vercel | Deployment platform |
+
+---
+
+# Features
+
+## Landing Page
+
+- Cinematic hero section
+- Animated gradient background
+- Smooth scrolling navigation
+- Premium typography system
+
+---
+
+## Destination Gallery
+
+Three luxury time travel experiences are presented through animated cards.
+
+### Paris 1889
+
+Experience the **Belle Époque** during the Universal Exposition and the inauguration of the Eiffel Tower.
+
+Highlights:
+
+- historic Paris atmosphere
+- artistic innovation
+- cultural elegance
+
+Price: **4900 €**
+
+---
+
+### Crétacé
+
+Travel **65 million years into the past** and explore prehistoric ecosystems.
+
+Highlights:
+
+- adventure exploration
+- wildlife observation
+- untouched nature
+
+Price: **7900 €**
+
+---
+
+### Florence 1504
+
+Discover the **Italian Renaissance** at the time of Michelangelo and Leonardo da Vinci.
+
+Highlights:
+
+- art and architecture
+- renaissance culture
+- intellectual exploration
+
+Price: **5400 €**
+
+---
+
+## AI Chatbot Assistant
+
+A floating chatbot widget acts as a **virtual travel concierge**.
+
+Capabilities:
+
+- answers questions about destinations
+- provides travel recommendations
+- explains prices and activities
+- simulates an AI assistant
+
+The chatbot uses a **rule-based natural language simulation with keyword detection**.
+
+---
+
+## Personalized Recommendation Quiz
+
+An interactive quiz helps users determine the **best destination for their profile**.
+
+Features:
+
+- 4 question personality profiling
+- weighted scoring algorithm
+- personalized recommendation result
+- explanation of why the destination matches the user
+
+The algorithm is implemented in:
+src/utils/recommendationEngine.js
+
+---
+
+# User Experience
+
+The application focuses on delivering a **premium, immersive experience**.
+
+UX highlights:
+
+- responsive mobile-first layout
+- smooth animations
+- interactive cards
+- elegant dark UI theme
+- luxury-inspired visual identity
+
+Animations are powered by **Framer Motion**.
+
+---
+
+# Project Structure
+src
+├── components
+│ ├── Navbar.jsx
+│ ├── Hero.jsx
+│ ├── DestinationsSection.jsx
+│ ├── DestinationCard.jsx
+│ ├── QuizSection.jsx
+│ ├── ChatWidget.jsx
+│ └── Footer.jsx
+│
+├── data
+│ ├── destinations.js
+│ └── faq.js
+│
+├── utils
+│ └── recommendationEngine.js
+│
 ├── App.jsx
 ├── main.jsx
-└── index.css                # Global styles & design tokens
-```
+└── index.css
+
+The project follows a **modular React component architecture** for maintainability and scalability.
 
 ---
 
-## Installation
+# Installation
+
+Clone the repository:
 
 ```bash
-# Clone the project
-git clone https://github.com/your-repo/timetravel-agency
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-The app runs on `http://localhost:5173`
-
----
-
-## Build & Deploy
-
-```bash
-# Production build
-npm run build
-
-# Preview production build
-npm run preview
-```
-
-### Recommended Deployment: Vercel
-
-1. Push to GitHub
-2. Connect repo on [vercel.com](https://vercel.com)
-3. Select **Vite** as framework preset
-4. Deploy — zero configuration required
-
----
-
-## AI Tools Used
-
-This project was developed with the assistance of **Claude (Anthropic)** for:
-
-- **Architecture design** — Component structure and data flow planning
-- **Code generation** — React components, utility functions, and styling
-- **UX writing** — French copy, destination descriptions, chatbot responses
-- **Algorithm design** — Weighted scoring matrix for the recommendation engine
-- **Design direction** — Dark luxury aesthetic, gold accent system, typography pairing
-
-The AI chatbot in the application itself uses a **rule-based keyword detection system** (not a live LLM) to simulate intelligent responses from a local knowledge base (`src/data/faq.js`).
-
----
-
-## Design Philosophy
-
-The visual direction draws inspiration from:
-- **Apple** — Restraint, negative space, premium feel
-- **SpaceX** — Dark cinematic backgrounds, technical aesthetic
-- **Luxury travel brands** — Gold accents, editorial typography
-
-Key design decisions:
-- **Cormorant Garamond** for display (serif elegance)
-- **Josefin Sans** for UI (geometric, refined)
-- **DM Mono** for technical labels (precision)
-- `#c9951a → #f5d78e` gold gradient as primary accent
-- `#070709` near-black as primary background
-
----
-
-## License
-
-MIT — Feel free to use for educational purposes.
+git clone https://github.com/bastienFayant/timetravel-agency
